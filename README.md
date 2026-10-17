@@ -6,9 +6,15 @@ Repositório oficial do **YTDL Studio** — aplicativo desktop multiplataforma m
 
 ## 📦 Downloads Oficiais (Desktop)
 
-Baixe sempre os instaladores prontos na página de releases oficiais:
+Baixe sempre os instaladores prontos pelos links permanentes abaixo. Eles apontam
+automaticamente para a release mais recente:
 
-👉 **[https://github.com/ytdlguibr/ytdlgui/releases](https://github.com/ytdlguibr/ytdlgui/releases)**
+- [macOS Apple Silicon (.dmg)](https://github.com/ytdlguibr/ytdlgui/releases/latest/download/YTDL.Studio_macOS-Apple-Silicon.dmg)
+- [macOS Intel (.dmg)](https://github.com/ytdlguibr/ytdlgui/releases/latest/download/YTDL.Studio_macOS-Intel.dmg)
+- [Windows x64 (.exe)](https://github.com/ytdlguibr/ytdlgui/releases/latest/download/YTDL.Studio_Windows-x64-Setup.exe)
+
+A [página de releases](https://github.com/ytdlguibr/ytdlgui/releases/latest) também
+reúne o histórico, checksums e notas de atualização.
 
 ### Versões Disponíveis:
 - **macOS Apple Silicon (.dmg)**: Otimizado para Macs com Apple Silicon (M1, M2, M3, M4 ou superiores).
