@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "YTDL Studio",
+  "version": "0.1.0",
+  "description": "Detecta vídeos públicos do YouTube e envia para o YTDL Studio Online.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": ["https://www.youtube.com/*", "https://youtube.com/*"],
+  "action": {
+    "default_title": "YTDL Studio",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://youtube.com/*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

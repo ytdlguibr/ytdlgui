@@ -1,0 +1,19 @@
+services:
+  ytdl-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ytdl-studio-api
+    restart: unless-stopped
+    ports:
+      - "${PORT:-8787}:8787"
+    environment:
+      - PORT=8787
+      - YTDL_STUDIO_API_TOKEN=${YTDL_STUDIO_API_TOKEN:-}
+      - YTDL_STUDIO_DEV_AUTH=${YTDL_STUDIO_DEV_AUTH:-1}
+      - YTDL_STUDIO_PUBLIC_BASE_URL=${YTDL_STUDIO_PUBLIC_BASE_URL:-http://localhost:8787}
+      - YTDL_STUDIO_OUTPUT_DIR=/downloads
+      - YTDL_STUDIO_YTDLP_PATH=/usr/local/bin/yt-dlp
+      - YTDL_STUDIO_FFMPEG_PATH=/usr/bin/ffmpeg
+    volumes:
+      - ./downloads:/downloads

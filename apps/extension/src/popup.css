@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 420px;
+  min-height: 560px;
+  background: #f7f8fb;
+  color: #101828;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  padding: 14px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.brand {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.muted {
+  color: #667085;
+  font-size: 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.video {
+  display: grid;
+  grid-template-columns: 116px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.thumb {
+  width: 116px;
+  height: 65px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #eef2f6;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+  max-height: 50px;
+  overflow: hidden;
+}
+
+.notice {
+  border-left: 3px solid #f79009;
+  padding: 8px 10px;
+  background: #fffaeb;
+  border-radius: 6px;
+  color: #7a2e0e;
+  font-size: 12px;
+}
+
+.error {
+  border-left: 3px solid #f04438;
+  padding: 8px 10px;
+  background: #fff1f3;
+  border-radius: 6px;
+  color: #b42318;
+  font-size: 12px;
+  white-space: pre-wrap;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.row > * {
+  flex: 1;
+}
+
+.button {
+  min-height: 34px;
+  border: 0;
+  border-radius: 7px;
+  background: #101828;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+.button.secondary {
+  background: #eef2f6;
+  color: #101828;
+}
+
+.button:disabled {
+  opacity: .55;
+  cursor: default;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #344054;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+select,
+input[type="text"],
+input[type="password"] {
+  min-height: 34px;
+  border-radius: 7px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  color: #101828;
+  padding: 0 9px;
+  width: 100%;
+}
+
+.scroll {
+  max-height: 130px;
+  overflow: auto;
+  border: 1px solid #e4e7ec;
+  border-radius: 7px;
+  padding: 8px;
+  background: #fcfcfd;
+}
+
+.check {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 6px;
+  align-items: start;
+  font-size: 12px;
+  color: #344054;
+  font-weight: 500;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 99px;
+  overflow: hidden;
+  background: #eaecf0;
+}
+
+.progress > div {
+  height: 100%;
+  background: #12b76a;
+}
+
+.link {
+  color: #175cd3;
+  font-weight: 700;
+  text-decoration: none;
+}
